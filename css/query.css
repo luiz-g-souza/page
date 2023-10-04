@@ -134,23 +134,6 @@
         height: auto !important;
     }
 
-    
-
-    #two-text{
-        color: coral;
-        position: relative !important;
-        background-color: blueviolet;
-    }
-
-    #two-text p:not(:last-child){
-        position: static !important;
-        
-    }
-
-    #two-text .toogle p:last-child{
-        padding: 2rem;
-    }
-
     .galeria .slider{
         width: 70% !important;
         background-color: aqua;
@@ -211,5 +194,19 @@
 
     .box {
         height: 13rem !important;
+    }
+
+    
+    .projetos .toogle:has(p){
+        position: relative !important;
+        
+    }
+
+    .projetos .toogle p:not(:last-child){
+        position: static !important;
+    }
+
+    .projetos .toogle p:last-child{
+        padding: 2rem;
     }
 }
