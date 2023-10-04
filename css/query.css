@@ -218,7 +218,9 @@
         top: 100px;
     }
 
-    #t1,#t2{
-        color: chocolate;
+    #t2{
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
     }
 }
