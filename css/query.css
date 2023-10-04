@@ -37,9 +37,7 @@
 
 
 @media (max-width:829px){
-    body{
-        background-color: blue;
-    }
+    
     .header .container{
         gap: .3rem;
         width: 100vw !important ;
@@ -136,9 +134,13 @@
         height: auto !important;
     }
 
+    .projetos{
+        background-color: blueviolet;
+    }
+
     .projetos .toogle:has(p){
         position: relative !important;
-        background-color: blueviolet;
+        
     }
 
     .projetos .toogle p:not(:last-child){
