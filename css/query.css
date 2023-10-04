@@ -37,6 +37,9 @@
 
 
 @media (max-width:829px){
+    body{
+        background-color: blue;
+    }
     .header .container{
         gap: .3rem;
         width: 100vw !important ;
@@ -80,10 +83,7 @@
     }
 
     .mobile-menu{
-        display: block !important;
-        width: 2rem;
-        height: 2rem;
-        
+        display: block !important;        
         overflow: hidden;
         
         display: flex !important;
