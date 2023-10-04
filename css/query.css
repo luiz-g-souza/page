@@ -136,7 +136,8 @@
 
     
 
-    #two-text:has(p){
+    #two-text{
+        color: coral;
         position: relative !important;
         background-color: blueviolet;
     }
