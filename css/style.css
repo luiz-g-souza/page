@@ -1,0 +1,479 @@
+/* @import 'query.css'; */
+@import 'animations.css';
+@import 'header.css';
+@import 'projetos.css';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,600;1,900&display=swap');
+
+/* ------variaveis------ */
+:root{
+    --logo1-color: #22d9dc;
+    --logo2-color: #5e7cec;
+    --color1:#192c70;
+    --text-color1:#d1d1d1;
+    --color2:#eeeeee;
+    --topo-altura: 5rem;
+}
+/* ---------------- */
+/* ----- correção ----- */
+*{
+    /* font-family: sans-serif; */
+    font-family: 'Kanit', 'sans-serif', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color:#fff; */
+}
+/* -------------------- */
+body{
+    /* background-color: #989898; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 300rem; */
+}
+h1,h2,h3,h4{
+    color: var(--color1);
+}
+
+.b{
+    border: 1px solid;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    position: relative;
+    max-width: 70rem;
+    min-width: 30rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.box-logo{
+    /* margin-top: var(--topo-altura); */
+
+    width: 100%;
+    /* height: 32rem; */
+    height: 100vh;
+    background-image: url("../img/fabrica2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* -webkit-backdrop-filter: blur(5px); */
+    backdrop-filter: brightness(30%);
+    /* -webkit-backdrop-filter: brightness(10%); */
+}
+
+.opacity{
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background-color: #00000093;
+}
+.opacity .container{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.opacity .container img{
+    width: 100%;
+    opacity: 0;
+    animation: show 2s forwards;
+}
+
+main{
+    width: 100%;
+}
+
+.descricao, .projetos, .galeria{
+    /* border: 1px solid; */
+
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 2rem;   */
+    /* border-top: #000 solid 3rem; */
+    /* border-right: #000 solid 3rem; */
+}
+/* .projetos .container::after, .descricao .container::after, .galeria .container::after{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 3rem;
+    background-color: #000;
+
+    position: absolute;
+    right: 0;   
+}
+
+.projetos .container::after{
+    left: 0;
+} */
+
+
+.toogle{
+    padding: 2rem;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+
+    font-size: 1.3rem;
+    width: 40rem;
+    height: 25rem;
+}
+
+
+
+.descricao .toogle:has(img){
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.toogle img{
+    width: 100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+    transition: scale, .8s;
+    
+}
+
+.toogle > img{
+    box-shadow: -1px 1px 3px 0px #0000008c;
+}
+
+.toogle > img:hover{
+    transform: scale(1.02);
+}
+
+.toogle p {
+    color: #37354b;
+    justify-content: start;
+    transition: 1s;
+    text-align: justify;
+}
+
+.galeria{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 25rem;
+}
+
+.galeria .btn-manual{
+    display: none;
+}
+
+.galeria .box-slider{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.galeria .slider{
+    width: 50%;
+    height: 20rem;
+    border-radius: .5rem;
+}
+
+.galeria .slides{
+    width: 400%;
+    height: 100%;
+}
+
+.galeria .slide{
+    width: 25%;
+    height: 25rem;
+}
+.galeria .slide img{
+    height: 100%;
+    width: 100%;
+}
+
+.galeria .box-label{
+    bottom: 1rem !important;
+}
+
+#radio3:checked ~ .slides{
+    margin-left: 0%;
+}
+#radio4:checked ~ .slides{
+    margin-left: -100%;
+}
+#radio5:checked ~ .slides{
+    margin-left: -200%;
+}
+#radio6:checked ~ .slides{
+    margin-left: -300%;
+}
+
+#radio3:checked ~ .box-label label[for='radio3']{
+    background-color: #2e2e2e;
+}
+#radio4:checked ~ .box-label label[for='radio4']{
+    background-color: #2e2e2e;
+}
+#radio5:checked ~ .box-label label[for='radio5']{
+    background-color: #2e2e2e;
+}
+#radio6:checked ~ .box-label label[for='radio6']{
+    background-color: #2e2e2e;
+}
+
+/* ---------- RODAPÉ ---------- */
+
+footer{
+    margin-top: 3rem;
+    /* width: 70rem; */
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .container{
+        flex-direction: column;
+    }
+}
+
+.social, .bottom{
+    justify-content: center;
+    align-items: start;
+}
+
+/* ---------- SOCIAL ---------- */
+.social{
+    width: 100% ;
+    height: 25rem;
+    /* background-color: #ececec; */
+    
+    flex-direction: column;
+    justify-content: space-around! important;
+    align-items: center! important;
+}
+
+.social h2{
+    position: relative;
+    /* color: #474747; */
+    color: var(--color1);
+}
+
+.social h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 300%;
+    height: 1px;
+    /* background-color: #474747; */
+    background-color: var(--color1);
+
+    /* animation: espandir 2s forwards; */
+}
+
+.social .coment{
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    
+}
+
+.content-text{
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 70%;
+    /* background-color: #bbbbbb; */
+    gap: 1rem;
+    box-shadow: -1px 1px 3px 0px #0000008c;
+}
+
+.content-text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif-;
+}
+
+.coment-box{
+    padding: .5rem;
+    width: 80%;
+    flex-direction: column  ;
+    gap: 1rem;
+}
+
+.cliente-name{
+    align-items: center;
+    gap: 1rem;
+    color: var(--color1);
+}
+.cliente-name p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.circlle-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: #d1d1d1;
+    /* border: 2px solid #808080; */
+}
+
+.circlle-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------- SOCIAL ---------- */
+
+.bottom{
+    margin-top: 3rem;
+    width: 100%;
+    height: 15rem;
+    /* background-color: #5e7cec; */
+    background-color: var(--color1);
+
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.bottom a{
+    
+    font-style: normal;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.box-info{
+    width: 50rem;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    width: 14rem;
+    height: 11rem;
+    gap: 1rem;
+    position: relative;
+}
+
+.box p{
+    font-size: .8rem;
+}
+.box h3{
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.box:not(:last-child)::after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: 0;
+    background:#fff;
+
+}
+
+.box-svg svg{
+    height: 2rem;
+    fill: #fff;
+}
+
+.box-text{
+    flex-direction: column;
+}
+
+/* ---------- RODAPÉ ---------- */
+
+/* ---------- aside ---------- */
+
+aside{
+    position: fixed;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22rem;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+
+.social-box{
+    font-weight: 600;
+    color: #fff;
+    padding-left: 1rem;
+    /* border: #000 solid 1px; */
+    width: 100%;
+    height: 3rem;
+    /* border-radius: .3rem; */
+
+    transform: translateX(75%);
+    transition: all 1s;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.social-box a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-box svg{
+    
+    fill: #fff;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.social-box.whats{
+    background-color: #25d366;
+}
+
+.social-box.email{
+    background-color: rgb(223 81 71);
+}
+
+.social-box.facebook{
+    background-color: #4867aa;
+}
+
+.social-box.whats:hover{
+    transform: translateX(18%);
+}
+
+.social-box.email:hover{
+    transform: translateX(10%);
+}
+
+.social-box.facebook:hover{
+    transform: translateX(10%);
+}
+
+/* ---------- aside ---------- */
+
+
+
+
+

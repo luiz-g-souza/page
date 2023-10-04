@@ -1,0 +1,132 @@
+.projetos{
+    border-right: none;
+    /* border-left: #000 solid 3rem; */
+}
+
+.projetos .toogle:has(p){
+    background-color: #1d1d1d;
+    /* border: 1px solid; */
+    transition: 1s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative !important;
+}
+
+.projetos h4{
+    margin-top: 1rem;
+}
+
+
+.projetos .toogle p{
+    margin-top: 2.35rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+
+.projetos .toogle p:last-child{
+    opacity: 0;
+}
+
+/* 
+.teste{
+    width: 40rem;
+    height: 25rem;
+} */
+
+.slider{
+    /* border: 1px solid; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.projetos .slides{
+    border-radius: .5rem;
+}
+
+.abs{
+    user-select: none;
+    position: absolute;
+    font-size: 1.5rem;
+    border-radius: .2rem;
+    background-color: #ffffff83;
+    transition: .8s;
+
+}
+
+.abs:hover{
+    background-color: #fff;
+}
+
+.slides{
+    width: 200%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slides .slide{
+    width: 50%;
+}
+
+.slides .slide img{
+    width: 100%;
+}
+
+.projetos .btn-manual{
+    display: none;
+}
+
+.projetos .toogle .box-label , .galeria .box-label{
+    /* z-index: 10000; */
+    /* border: 1px solid; */
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.label-manual{
+    padding: 5px;
+    border: 1px solid #fff;
+    background-color: #939393aa;
+    border-radius: 100%;
+    transition: .5s;
+}
+
+.label-manual:hover{
+    background-color: #474747;
+}
+
+.label-manual:not(:last-child){
+    margin-right: .5rem ;
+}
+
+.projetos .label-manual{
+    margin-bottom: 1.3rem;
+}
+
+#radio1:checked ~ .slides{
+    margin-left: 0%;
+}
+#radio1:checked ~ .box-label label[for='radio1']{
+    background-color: #1d1d1d;
+}
+#radio2:checked ~ .box-label label[for='radio2']{
+    background-color: #1d1d1d;
+}
+
+#radio2:checked ~ .slides{
+    margin-left: -100%;
+}

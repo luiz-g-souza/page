@@ -1,0 +1,32 @@
+/*----- ANIMAÇÕES -----*/
+@keyframes show{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes recolherDireita {
+    
+}
+
+@keyframes espandir {
+    form{
+        width: 0%;
+    }
+    to{
+        width: 300%;
+    }
+}
+
+@keyframes espandir2 {
+    form{
+        width: 0%;
+    }
+    to{
+        width: 200%;
+    }
+}
+/*---------------*/
