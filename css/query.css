@@ -138,6 +138,7 @@
 
     .projetos .toogle:has(p){
         position: relative !important;
+        background-color: blueviolet;
     }
 
     .projetos .toogle p:not(:last-child){

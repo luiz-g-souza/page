@@ -4,7 +4,7 @@
 }
 
 .projetos .toogle:has(p){
-    background-color: #1d1d1d;
+    /* background-color: #1d1d1d; */
     /* border: 1px solid; */
     transition: 1s;
     flex-direction: column;
