@@ -50,7 +50,7 @@ var interval1 = setInterval(()=>{
     // contador++;
     // if(contador ==2 ) contador = 0
     trocar();
-}, 10000)
+}, 2000)
 
 var interval2 = setInterval(() =>{
     inputs2[contador2].checked = true;
