@@ -128,8 +128,15 @@
         align-items: center;
         flex-direction: column;
     }
-
     .toogle{
+        padding: 2rem;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex: 1; */
+    
+        font-size: 1.3rem;
         width: 100% !important;
         height: auto !important;
     }
@@ -196,7 +203,7 @@
         height: 13rem !important;
     }
 
-    
+
     .projetos .toogle:has(p){
         position: relative !important;
         
@@ -208,5 +215,6 @@
 
     .projetos .toogle p:last-child{
         padding: 2rem;
+        top: 100px;
     }
 }
