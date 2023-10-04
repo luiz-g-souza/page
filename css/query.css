@@ -138,12 +138,12 @@
 
     #two-text:has(p){
         position: relative !important;
-        
+        background-color: blueviolet;
     }
 
     #two-text p:not(:last-child){
         position: static !important;
-        background-color: blueviolet;
+        
     }
 
     #two-text .toogle p:last-child{
