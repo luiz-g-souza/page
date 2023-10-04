@@ -457,6 +457,7 @@ aside{
 
 .social-box.facebook{
     background-color: #4867aa;
+    display: none;
 }
 
 .social-box.whats:hover{

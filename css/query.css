@@ -134,20 +134,19 @@
         height: auto !important;
     }
 
-    .projetos{
-        background-color: blueviolet;
-    }
+    
 
-    .projetos .toogle:has(p){
+    #two-text:has(p){
         position: relative !important;
         
     }
 
-    .projetos .toogle p:not(:last-child){
+    #two-text p:not(:last-child){
         position: static !important;
+        background-color: blueviolet;
     }
 
-    .projetos .toogle p:last-child{
+    #two-text .toogle p:last-child{
         padding: 2rem;
     }
 
