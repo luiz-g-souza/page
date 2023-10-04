@@ -35,8 +35,8 @@
 }
 
 
-/* 
-@media only screen and (max-width:829px){
+
+@media (max-width:829px){
     .header .container{
         gap: .3rem;
         width: 100vw !important ;
@@ -209,4 +209,4 @@
     .box {
         height: 13rem !important;
     }
-} */
+}
