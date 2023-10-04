@@ -217,8 +217,12 @@
         padding: 2rem;
     }
 
-    #t2{
+    #texts{
         position: relative !important;
+    }
+
+    #t2{
+        position: absolute !important;
         top: 0 !important;
         left: 0 !important;
     }
