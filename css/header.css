@@ -127,8 +127,6 @@ nav{
 
 .menu-btn{
     transition: all .3s;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
 }
 .menu-btn:hover{
     /* transition: all .5s; */

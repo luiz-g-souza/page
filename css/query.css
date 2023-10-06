@@ -73,6 +73,11 @@
         justify-content: flex-end;
     }
 
+    .menu-btn{
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
     .desk-menu{
         display: none;
     }
