@@ -43,6 +43,7 @@
         width: 100vw !important ;
         align-items: center !important;
         justify-content: space-around !important;
+        padding: 0px 2rem;
     }
 
     header.show{
@@ -69,7 +70,7 @@
 
     .menu-box{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .desk-menu{
